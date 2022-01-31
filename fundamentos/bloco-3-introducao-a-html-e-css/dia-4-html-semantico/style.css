@@ -30,3 +30,20 @@ h1 {
   width: 300px;
   display: inline-block;
 }
+
+section ul li{
+  display: inline-block;
+    
+}
+
+.leftMargin{
+  margin-left: 17%;
+}
+
+.leftMargin2{
+  margin-left: 14%;
+}
+
+h3{
+  text-align: center;
+}
