@@ -1,5 +1,5 @@
 let createH1 = document.createElement("h1");
-createH1.innerText = "Exercício 5.2 - JavaScript DOM";
+createH1.innerText = "Mario";
 createH1.className = "title";
 document.body.appendChild(createH1);
 
@@ -65,7 +65,7 @@ createMain.removeChild(sectionLeft);
 
 let sectionRight = document.getElementsByClassName("right-content")[0];
 sectionRight.style.marginRight = "auto";
-sectionRight.style.backgroundColor = "red";
+sectionRight.style.backgroundColor = "blue";
 
 let sectionCenter = document.getElementsByClassName("center-content")[0];
 
