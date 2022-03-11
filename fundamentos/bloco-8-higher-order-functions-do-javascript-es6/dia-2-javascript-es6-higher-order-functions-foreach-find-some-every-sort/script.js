@@ -99,3 +99,55 @@ const books = [
 
 // console.log(smallerName());
 
+// const expectedResult = {
+//   author: {
+//     birthYear: 1948,
+//     name: "George R. R. Martin",
+//   },
+//   genre: "Fantasia",
+//   id: 1,
+//   name: "As Crônicas de Gelo e Fogo",
+//   releaseYear: 1991,
+// };
+
+// function getNamedBook() {
+//   // escreva seu código aqui
+
+//   return books.find((elements) => elements.name.length === 26).author.name;
+// }
+
+// console.log(getNamedBook());
+
+// function booksOrderedByReleaseYearDesc() {
+//   // escreva aqui seu código
+//   return books.sort((a, b) => b.releaseYear - a.releaseYear);
+// }
+
+// console.log(booksOrderedByReleaseYearDesc());
+
+// function everyoneWasBornOnSecXX() {
+//   // escreva seu código aqui
+//   return books.every((elements) => elements.author.birthYear >= 2000);
+// }
+
+// console.log(everyoneWasBornOnSecXX());
+
+// function someBookWasReleaseOnThe80s() {
+//   // escreva seu código aqui
+//   return books.some((elements) => elements.releaseYear >= 1980 && elements.releaseYear <= 1989)
+// }
+
+// console.log(someBookWasReleaseOnThe80s());
+
+function authorUnique() {
+  // escreva seu código aqui
+  return books.every((elements) => 
+      !books.some((elements2) =>
+        (elements.author.birthYear === elements2.author.birthYear) &&
+        (elements.author.name !== elements2.author.name)
+    )
+  );
+}
+
+console.log(authorUnique());
+
